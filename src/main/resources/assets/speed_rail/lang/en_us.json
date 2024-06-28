@@ -1,3 +1,4 @@
 {
-  "item.speed_rail.srail": "Speed Rail"
+  //"item.speed_rail.srail": "Speed Rail",
+  "block.speed_rail.speed_rail": "Speed Rail"
 }

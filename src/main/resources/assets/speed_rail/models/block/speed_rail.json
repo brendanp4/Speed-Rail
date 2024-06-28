@@ -1,0 +1,6 @@
+{
+  "parent": "speed_rail:block/rail_flat",
+  "textures": {
+    "rail": "speed_rail:block/speed_rail"
+  }
+}

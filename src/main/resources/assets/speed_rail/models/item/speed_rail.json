@@ -1,0 +1,6 @@
+{
+  "parent": "speed_rail:item/generated",
+  "textures": {
+    "layer0": "speed_rail:block/speed_rail"
+  }
+}
