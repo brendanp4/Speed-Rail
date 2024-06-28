@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "speed_rail",
+	"version": "${version}",
+	"name": "Speed Rail",
+	"description": "Adds a speed rail!",
+	"authors": [
+		"TheBossMan"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/speed_rail/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bossman.speedrail.SpeedRail"
+		],
+		"client": [
+			"net.bossman.speedrail.SpeedRailClient"
+		],
+		"fabric-datagen": [
+			"net.bossman.speedrail.SpeedRailDataGenerator"
+		]
+	},
+	"mixins": [
+		"speed_rail.mixins.json",
+		{
+			"config": "speed_rail.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
