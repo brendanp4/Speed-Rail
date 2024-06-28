@@ -1,10 +1,11 @@
 package net.bossman.speedrail;
 
+import net.bossman.speedrail.item.ModItems;
 import net.fabricmc.api.ClientModInitializer;
 
 public class SpeedRailClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
+		ModItems.RegisterModItems();
 	}
 }
