@@ -3,7 +3,8 @@
 	"package": "net.bossman.speedrail.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"MinecartMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -1,0 +1,6 @@
+{
+  "parent": "speed_rail:block/rail_curved",
+  "textures": {
+    "rail": "speed_rail:block/speed_rail_corner"
+  }
+}

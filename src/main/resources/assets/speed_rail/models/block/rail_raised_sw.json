@@ -1,0 +1,6 @@
+{
+  "parent": "speed_rail:block/template_rail_raised_sw",
+  "textures": {
+    "rail": "speed_rail:block/speed_rail"
+  }
+}
