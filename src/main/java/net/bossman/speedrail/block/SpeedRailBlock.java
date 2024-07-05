@@ -234,9 +234,10 @@ public class SpeedRailBlock extends AbstractRailBlock {
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         if (!world.isClient && entity instanceof AbstractMinecartEntity minecart) {
-            minecart.setGlowing(true);
-            minecart.setVelocity(minecart.getVelocity().multiply(5.0));
+            //minecart.setGlowing(true);
+            minecart.setVelocity(minecart.getVelocity().multiply(1.5));
             //System.out.println(minecart.isOnRail());
+            //System.out.println(minecart.getMaxSpeed());
         }
     }
 
