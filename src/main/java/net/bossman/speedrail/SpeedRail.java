@@ -2,7 +2,7 @@ package net.bossman.speedrail;
 
 import com.mojang.datafixers.types.templates.Tag;
 import net.bossman.speedrail.block.SpeedRailBlock;
-import net.bossman.speedrail.item.ModItems;
+//import net.bossman.speedrail.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.block.*;
@@ -28,10 +28,7 @@ public class SpeedRail implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		//ModItems.RegisterModItems();
 		//SpeedRailBlock.registerBlocks();
-		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "speed_rail"), SPEED_RAIL_BLOCK);
-		Registry.register(Registries.ITEM, new Identifier(MOD_ID, "speed_rail"), new BlockItem(SPEED_RAIL_BLOCK, new Item.Settings()));
-
-
-
+		Registry.register(Registries.BLOCK, Identifier.of(MOD_ID, "speed_rail"), SPEED_RAIL_BLOCK);
+		Registry.register(Registries.ITEM, Identifier.of(MOD_ID, "speed_rail"), new BlockItem(SPEED_RAIL_BLOCK, new Item.Settings()));
 	}
 }
